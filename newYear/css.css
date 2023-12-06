@@ -314,3 +314,43 @@ a.author{
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    /* Voeg hier je mobiele stijlen toe */
+    body {
+        font-size: 40px; /* Voorbeeld: pas de tekstgrootte aan voor mobiele weergave */
+    }
+    .feliz {
+        font-size: 8vw; /* 5% van de viewport breedte voor de tekst */
+    }
+
+    .ano_novo > span {
+        font-size: 15vw; /* 10% van de viewport breedte voor de cijfers */
+
+
+    }
+    .ano_novo {
+        flex-direction: row; /* Plaats de cijfers naast elkaar in plaats van boven elkaar */
+        justify-content: center; /* Centreer de cijfers horizontaal */
+        padding: 10% 0 0 0;
+    }
+    img {
+        max-width: 100%; /* Zorg ervoor dat afbeeldingen niet breder zijn dan hun container */
+        height: auto; /* Handhaaf de beeldverhouding */
+    }
+
+    span.seis{
+        position: absolute;
+        top: 48%;
+        right: 50%;
+        margin-right: -94px;
+        animation: vai_2016 5s ease-in-out 5s forwards;
+    }
+    span.sete{
+        position: absolute;
+        right: 0%;
+        margin-right: -92px;
+        animation: vem_2017 6s ease-in-out forwards;
+    }
+
+}
